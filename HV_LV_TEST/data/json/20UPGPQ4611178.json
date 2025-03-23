@@ -1,0 +1,21 @@
+{
+    "property": {
+        "OPERATOR": "",
+        "INSTRUMENT": null,
+        "ANALYSIS_VERSION": null,
+        "TEST_DURATION": 10,
+        "HV_LV_TEST_MEASUREMENT_VERSION": "4.0.dev1"
+    },
+    "Metadata": {},
+    "VIN_DROP": 0.353,
+    "GND_DROP": 0.302,
+    "EFFECTIVE_RESISTANCE": 9.399999999999999,
+    "HV_LEAKAGE": 36,
+    "LEAKAGE_CURRENT": 3.6,
+    "NTC_VOLTAGE": 1.486,
+    "NTC_VALUE": 6.864,
+    "TEMPERATURE": 24.8,
+    "RELATIVE_HUMIDITY": 5.4,
+    "R1_HV_RESISTOR": -1,
+    "DAMAGE_COMMENT": ""
+}

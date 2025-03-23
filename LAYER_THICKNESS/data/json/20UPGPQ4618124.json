@@ -1,0 +1,14 @@
+{
+    "properties": {
+        "ANALYSIS_VERSION": null,
+        "INSTRUMENT": null,
+        "OPERATOR": ""
+    },
+    "BOTTOM_LAYER_THICKNESS": 33.2,
+    "COVERLAY_WITH_ADHESIVE_THICKNESS": 89.7,
+    "CU_THICKNESS": null,
+    "DIELECTRIC_THICKNESS": 83.8,
+    "INNER_LAYER_THICKNESS": 12.5,
+    "THICKNESS": 229,
+    "TOP_LAYER_THICKNESS": 30.4
+}

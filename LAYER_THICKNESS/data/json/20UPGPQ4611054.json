@@ -1,0 +1,16 @@
+{
+    "property": {
+        "OPERATOR": "Takumi Kumayama",
+        "INSTRUMENT": null,
+        "ANALYSIS_VERSION": null,
+        "LAYER_THICKNESS_MEASUREMENT_VERSION": "4.0.dev1"
+    },
+    "Metadata": {},
+    "TOP_LAYER_THICKNESS": 29.4,
+    "INNER_LAYER_THICKNESS": 10.5,
+    "BOTTOM_LAYER_THICKNESS": 31.7,
+    "DIELECTRIC_THICKNESS": 84.3,
+    "COVERLAY_WITH_ADHESIVE_THICKNESS": 81.2,
+    "THICKNESS": 223.5,
+    "CU_THICKNESS": null
+}

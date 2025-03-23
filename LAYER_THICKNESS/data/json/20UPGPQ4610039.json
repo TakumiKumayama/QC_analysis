@@ -1,0 +1,16 @@
+{
+    "property": {
+        "OPERATOR": "Takumi Kumayama",
+        "INSTRUMENT": null,
+        "ANALYSIS_VERSION": null
+    },
+    "Metadata": {
+        "MODULE_SN": "20UPGPQ4610039"
+    },
+    "TOP_LAYER_THICKNESS": 34.4,
+    "INNER_LAYER_THICKNESS": 11.0,
+    "BOTTOM_LAYER_THICKNESS": 34.2,
+    "DIELECTRIC_THICKNESS": 85.3,
+    "COVERLAY_WITH_ADHESIVE_THICKNESS": 79.7,
+    "THICKNESS": 231.0
+}

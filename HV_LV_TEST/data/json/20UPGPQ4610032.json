@@ -1,0 +1,22 @@
+{
+    "property": {
+        "OPERATOR": "",
+        "INSTRUMENT": null,
+        "ANALYSIS_VERSION": null,
+        "TEST_DURATION": 10
+    },
+    "Metadata": {
+        "MODULE_SN": "20UPGPQ4610032"
+    },
+    "VIN_DROP": 0.324,
+    "GND_DROP": 0.287,
+    "EFFECTIVE_RESISTANCE": 7.220000000000001,
+    "HV_LEAKAGE": 40,
+    "LEAKAGE_CURRENT": 4.0,
+    "NTC_VOLTAGE": 1.404,
+    "NTC_VALUE": 7.265,
+    "TEMPERATURE": 24.2,
+    "RELATIVE_HUMIDITY": 4.0,
+    "R1_HV_RESISTOR": -1,
+    "DAMAGE_COMMENT": ""
+}

@@ -1,0 +1,16 @@
+{
+    "property": {
+        "OPERATOR": "",
+        "INSTRUMENT": null,
+        "ANALYSIS_VERSION": null,
+        "LAYER_THICKNESS_MEASUREMENT_VERSION": "4.0.dev1"
+    },
+    "Metadata": {},
+    "TOP_LAYER_THICKNESS": 29.9,
+    "INNER_LAYER_THICKNESS": 9.5,
+    "BOTTOM_LAYER_THICKNESS": 32.7,
+    "DIELECTRIC_THICKNESS": 85.3,
+    "COVERLAY_WITH_ADHESIVE_THICKNESS": 92.7,
+    "THICKNESS": 228.5,
+    "CU_THICKNESS": null
+}

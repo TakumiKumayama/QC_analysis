@@ -1,0 +1,24 @@
+{
+    "property": {
+        "OPERATOR": "Takumi Kumayama",
+        "INSTRUMENT": null,
+        "ANALYSIS_VERSION": null,
+        "TEST_DURATION": null
+    },
+    "Metadata": {
+        "MODULE_SN": "20UPGPQ2603014"
+    },
+    "VIN_DROP": 0.44,
+    "GND_DROP": 0.463,
+    "EFFECTIVE_RESISTANCE": 18.06,
+    "HV_LEAKAGE": 57,
+    "LEAKAGE_CURRENT": 5.7,
+    "NTC_VOLTAGE": 1.422,
+    "NTC_VALUE": 7.173,
+    "TEMPERATURE": "",
+    "RELATIVE_HUMIDITY": 13.0,
+    "R1_HV_RESISTOR": -1,
+    "DAMAGE_COMMENT": "",
+    "VIN_RESISTANCE": 8.8,
+    "GND_RESISTANCE": 9.26
+}
