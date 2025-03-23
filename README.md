@@ -142,4 +142,4 @@ python3  get_json.py
 - -v : デバッグ用。localDBtools.py内での挙動を追うときの使用を推奨する。ローカルデータベースの環境が変わったタイミングなど。
     python3 get_json.py -v
 =======
-ちょっと変更
+ちょっと変更した
