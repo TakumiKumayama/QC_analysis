@@ -3,7 +3,7 @@
 ▶︎ スクリプト概要
 - atlasdb01.kek.jp上で使用する。pullするディレクトリの指定はない。
 - HV_LV_TESTの結果を扱う時の単位は全て[mOhm]と[nA]で統一させている。
-- スプレッドシートを参照し、品質検査が終了したフレキシブル基板の一覧リスト(シリアルナンバー)を作成。
+- スプレッドシートを参照し、品質検査が終了したフレキシブル基板の一覧リスト(シリアルナンバー)を作成。"DB POP"の列が"Uploaded to PDB"になっているシリアルナンバーを取得し、PCB.txtを作成している。
 - 作成したリストを元に、ローカルデータベースから試験結果jsonファイルを取得。
 - -pのオプションをつけることでヒストグラムの作成も可能。
 
@@ -70,7 +70,7 @@ python3  get_json.py
 - スプレッドシートを参照し、アセンブリが完了したモジュールのリストを作成。
 - リスト内のモジュールIV(INITIAL_WARM)のjsonファイルを取得。
 - 取得したjsonファイルはatlasdb01.kek.jpへsshすることで、Module, BareModule, sensorの各製造工程のIVを比較できるようになります。
-- BAREMODULE_SENSOR_IV/data/json/Module/以下にscpしてもらう想定で作成している。
+- IV_COMPARE/data/json/Module/以下にscpしてもらう想定で作成している。
 - repicgw以下で作業をしたい場合は各自開発を推奨します。
 
 ▶︎ ファイル構造
@@ -84,7 +84,7 @@ python3  get_json.py
        
        
 ▶︎ コードの実行
-コードの実行 LAYER_THICKNESS/scripts にて以下のコマンドを実行。
+コードの実行 MODULE_IV/scripts にて以下のコマンドを実行。
 python3  get_json.py
 
 - -v : デバッグ用。localDBtools.py内での挙動を追うときの使用を推奨する。ローカルデータベースの環境が変わったタイミングなど。
@@ -92,21 +92,16 @@ python3  get_json.py
 
 
 
-
-
-
-
-
-[BAREMODULE_SENSOR_IV]
+[IV_COMPARE]
 ▶︎ スクリプト概要
 - atlasdb01.kek.jp上で使用する。pullするディレクトリの指定はない。
 - BareModule, sensorのIVを扱う時の単位は全て[V]と[uA]で統一させている。
 - スプレッドシートを参照し、アセンブリが完了したModule-BareModule-sensorのリストを作成。
-- 作成したリストを元に、ローカルデータベースから試験結果jsonファイルを取得。
-- -pのオプションをつけることでヒストグラムの作成も可能。ただし、-pオプションをつける前にrepicgwからModuleのIV結果を持ってくる必要がある。
+- 作成したリストを元に、ローカルデータベースからBareModuleとsensorのIV結果jsonファイルを取得。
+- -pのオプションをつけることで各ステージ(sensor, Bare, Module)におけるIV比較プロットが生成される。ただし、-pオプションをつける前にrepicgwからModuleのIV結果を持ってくる必要がある。
 
 ▶︎ 結果の出力方法
-- get_jsonに-pのオプションをつけるとsensor, BareModule, Moduleの角製造工程におけるIVの比較プロットが作成される。※ただし、repicgwからModuleのjsonを所定のディレクトリにscpしてくる必要がある。詳細は[MODULE_IV]を参照。
+- get_jsonに-pのオプションをつけるとsensor, BareModule, Moduleの各製造工程におけるIVの比較プロットが作成される。※ただし、repicgwからModuleのjsonを所定のディレクトリにscpしてくる必要がある。詳細は[MODULE_IV]を参照。
 - ModuleとBareModuleのIVに関する品質検査に関しては、２つの品質基準を要求する(2025.3.25時点。変更の可能性有)。
 - get_jsonに-pのオプションをつけると以下二つのクライテリアに基づいたModuleの品質結果がresults/Module_Judge_result.listに作成される。
 
@@ -132,7 +127,7 @@ python3  get_json.py
        - sensor         ローカルデータベースから取得したsensorの試験結果(20UPGSXXXYYYY.json)を個別に格納。
        
 ▶︎ コードの実行
-コードの実行 LAYER_THICKNESS/scripts にて以下のコマンドを実行。
+コードの実行 IVCOMPARE/scripts にて以下のコマンドを実行。
 python3  get_json.py
 
 オプションをつけることも可能。
@@ -142,4 +137,3 @@ python3  get_json.py
 - -v : デバッグ用。localDBtools.py内での挙動を追うときの使用を推奨する。ローカルデータベースの環境が変わったタイミングなど。
     python3 get_json.py -v
 =======
-ちょっと変更した
